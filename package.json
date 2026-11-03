@@ -9,7 +9,7 @@
     "dev:backend": "ts-node-dev --respawn --transpile-only --project tsconfig.backend.json src/server.ts",
     "dev:frontend": "vite",
     "build": "tsc -b && vite build",
-    "build:backend": "tsc",
+    "build:backend": "tsc -p tsconfig.backend.json",
     "start": "node dist/server.js",
     "preview": "vite preview",
     "lint": "oxlint",
